@@ -1,0 +1,87 @@
+body {
+    background: url(photos/awfulkid-bck2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    font-family: "oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 2em;
+	color: #ff9d00;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@font-face {
+    font-family: mistv;
+    src: url(fonts/mistervampire/MISTV.ttf);
+}
+
+h1 {
+	font-family: "mistv","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 5em;
+	position: fixed;
+	top: 40px;
+	left: 100px;
+	color: #ff9d00;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.nav-pills>li>a {
+    border-radius: 8px;
+}
+
+.nav-pills>li>a:hover, .nav-pills>li>a:focus, .nav-pills>li>a:active {
+    background-color: #ff9d00;
+}
+
+.nav .children a:hover, .nav .children a:focus, .nav .children a:active {
+	background-color: #ff9d00;
+}
+
+.nav .children a {
+	margin-left: -25px;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+ 	border-radius: 8px;   
+}
+
+.nav .children li {
+	height: 48px;
+}
+
+.nav .children {
+	list-style: none;
+}
+
+.bs-docs-sidebar {
+
+}
+
+.nav-cont {
+	position: fixed;
+	bottom: 200px;
+	left: 100px;
+	width: 25%;
+}
+
+.nav-stacked>li+li {
+    margin-top: 0px;
+    margin-left: 0;
+}
+
+.awk_content {
+	position: fixed;
+	right: 100px;
+	top: 250px;
+	width: 33%;
+}
+
+p {
+	font-family: "oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.5em;
+	color: #ff9d00;
+    font-weight: 700;
+    text-transform: uppercase;
+}
