@@ -44,12 +44,12 @@ h1 {
 	font-family: "mistv","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 7em;
 	position: fixed;
-	top: 20px;
+	top: 30px;
 	left: 100px;
 	color: #0004FF;
     font-weight: 400;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 0.8;
 }
 
 .nav-pills li {
@@ -67,8 +67,8 @@ h1 {
     color: white;
 }
 
-.nav-music a:hover, .nav-music .children a:focus, .nav-music a:active {
-
+.nav-music>a:hover, .nav-music>a:focus, .nav-music>a:active {
+	background-color: #ff9d00;
 }
 
 .awk_content .nav-music a {
