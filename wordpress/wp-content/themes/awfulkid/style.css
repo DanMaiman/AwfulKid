@@ -1,50 +1,82 @@
+
+
 body {
-    background: url(photos/awfulkid-bck2.jpg);
+    background: url(photos/awfulkid-bck2.jpg) fixed;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 50px;
-    font-family: "oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "dosis","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 2em;
 	color: #ff9d00;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
+}
+
+strong {
+	color: #0004FF;
+}
+
+a {
+	color: #0004FF;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 @font-face {
     font-family: mistv;
-    src: url(fonts/mistervampire/MISTV.ttf);
+    src: url(fonts/germs/germs.ttf);
 }
+
+@font-face {
+    font-family: dosis;
+    src: url(fonts/Dosis/Dosis-Bold.ttf);
+}
+
+.navbar-default {
+	font-size: 18px;
+}
+
 
 h1 {
 	font-family: "mistv","Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 5em;
+	font-size: 7em;
 	position: fixed;
-	top: 40px;
+	top: 20px;
 	left: 100px;
-	color: #ff9d00;
+	color: #0004FF;
     font-weight: 400;
     letter-spacing: -1px;
     line-height: 1;
 }
 
+.nav-pills li {
+	padding-bottom: 10px;
+}
+
 .nav-pills>li>a {
     border-radius: 8px;
+    background-color: #ff9d00;
+	color: #0004FF;
 }
 
 .nav-pills>li>a:hover, .nav-pills>li>a:focus, .nav-pills>li>a:active {
-    background-color: #ff9d00;
+    background-color: #FFC76D;
+    color: white;
 }
 
-.nav .children a:hover, .nav .children a:focus, .nav .children a:active {
-	background-color: #ff9d00;
+.nav-music a:hover, .nav-music .children a:focus, .nav-music a:active {
+
 }
 
-.nav .children a {
-	margin-left: -25px;
+.awk_content .nav-music a {
     position: relative;
     display: block;
-    padding: 10px 15px;
- 	border-radius: 8px;   
+ 	border-radius: 8px;
+ 	background: none;  
+ 	line-height: 1.33;
 }
 
 .nav .children li {
@@ -55,15 +87,21 @@ h1 {
 	list-style: none;
 }
 
+.nav-music li a {
+	height: 110px;
+	font-size: 3em;
+}
+
 .bs-docs-sidebar {
 
 }
 
 .nav-cont {
+	text-align: center;
 	position: fixed;
-	bottom: 200px;
+	top: 340px;
 	left: 100px;
-	width: 25%;
+	width: 10%;
 }
 
 .nav-stacked>li+li {
@@ -72,16 +110,46 @@ h1 {
 }
 
 .awk_content {
-	position: fixed;
+	position: absolute;
 	right: 100px;
-	top: 250px;
+	top: 200px;
 	width: 33%;
 }
 
 p {
-	font-family: "oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 1.5em;
 	color: #ff9d00;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		text-align: center;
+		background-size: auto;
+	}
+
+
+	.container {
+		margin: auto;
+	}
+
+	h1 {
+		font-family: "mistv","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 5em;
+		position: static;
+	    font-weight: 400;
+	    letter-spacing: -1px;
+	    line-height: 1;
+	    margin-top: 20px;
+	}
+
+	.awk_content {
+		position: static;
+		margin: auto;
+		width: 90%;
+		font-size: 0.7em;
+		margin-top: 50px;
+		padding-bottom: 100px;
+	}
 }
