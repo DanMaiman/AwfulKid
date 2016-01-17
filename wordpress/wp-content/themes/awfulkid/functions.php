@@ -1,5 +1,7 @@
 <?php    
 
+add_theme_support( 'post-thumbnails' );
+
 function awk_theme_style() {
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/dist/css/bootstrap.min.css' );
 	wp_enqueue_style( 'style_css', get_template_directory_uri() . '/style.css' );
