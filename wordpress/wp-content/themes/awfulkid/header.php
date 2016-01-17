@@ -44,7 +44,8 @@
 
     <div class="container">
 
-      <a href="<?php echo get_settings('home'); ?>"><h1 class="awkLogo">AWFUL<br>KID</h1></a>
+      <a href="<?php echo get_settings('home'); ?>"><img class="logo" src="http://localhost:8888/AwfulKid/wordpress/wp-content/uploads/2016/01/AWFUKIDL.png" width="350"></a>
+
 
 
 <div class="nav-cont">

@@ -40,16 +40,10 @@ a:hover {
 }
 
 
-h1 {
-	font-family: "mistv","Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 7em;
+.logo {
 	position: fixed;
 	top: 30px;
-	left: 100px;
-	color: #0004FF;
-    font-weight: 400;
-    letter-spacing: -1px;
-    line-height: 0.9;
+	left: 70px;
 }
 
 .nav-pills li {

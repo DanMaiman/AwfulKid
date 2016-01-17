@@ -1,12 +1,12 @@
 jQuery(document).ready(function() {
 
 
-	jQuery('h1.awkLogo').mouseenter(function(){
-		jQuery('h1.awkLogo').addClass('animated pulse');
+	jQuery('img.logo').mouseenter(function(){
+		jQuery('img.logo').addClass('animated pulse');
 	});
 
-	jQuery('h1.awkLogo').mouseleave(function(){
-		jQuery('h1.awkLogo').removeClass('animated pulse');
+	jQuery('img.logo').mouseleave(function(){
+		jQuery('img.logo').removeClass('animated pulse');
 	});
 
 	jQuery('a').click(function (e) {
