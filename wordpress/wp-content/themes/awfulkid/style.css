@@ -11,6 +11,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    overflow-x:hidden;
 }
 
 strong {
@@ -93,7 +94,6 @@ a:hover {
 }
 
 .nav-music li a {
-	height: 110px;
 	font-size: 3em;
 }
 
@@ -110,7 +110,7 @@ a:hover {
 	position: absolute;
 	right: 100px;
 	top: 200px;
-	width: 33%;
+	width: 38%;
 }
 
 .wpcf7-form-control {
@@ -149,6 +149,58 @@ p {
     text-transform: uppercase;
 }
 
+.woocommerce {
+	font-size: 0.7em;
+}
+
+.woocommerce form .form-row-first, .woocommerce form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last {
+    float: left;
+    width: 100%;
+    overflow: visible;
+}
+
+.woocommerce .col2-set .col-1, .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-1, .woocommerce-page .col2-set .col-2 {
+    float: none;
+    width: 100%;
+}
+
+.callOut {
+    text-align: center;
+    margin: 0;
+}
+
+.arrow_box {
+	display: none;
+	position: absolute;
+	background: #ff6262;
+	border: 4px solid #D90429;
+	padding: 20px;
+	border-radius: 6px;
+}
+.arrow_box:after, .arrow_box:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #ff6262;
+	border-width: 30px;
+	margin-top: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-left-color: #D90429;
+	border-width: 36px;
+	margin-top: -36px;
+}
+
 @media screen and (max-width: 767px) {
 	body {
 		text-align: center;
@@ -161,13 +213,12 @@ p {
 	}
 
 	.logo {
-		  font-family: "mistv","Helvetica Neue",Helvetica,Arial,sans-serif;
-		  font-size: 5em;
-		  position: static;
+		display: none;
+		position: static;
 	    font-weight: 400;
 	    letter-spacing: -1px;
 	    line-height: 1;
-      width:100%;
+      	width:100%;
 	}
 
 	.awk_content {
@@ -178,4 +229,15 @@ p {
 		margin-top: 50px;
 		padding-bottom: 100px;
 	}
+
+	.woocommerce {
+		font-size: 1em;
+	}
+
+	.woocommerce #content table.cart td.actions .button, .woocommerce #content table.cart td.actions .input-text, .woocommerce #content table.cart td.actions input, .woocommerce table.cart td.actions .button, .woocommerce table.cart td.actions .input-text, .woocommerce table.cart td.actions input, .woocommerce-page #content table.cart td.actions .button, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions input, .woocommerce-page table.cart td.actions .button, .woocommerce-page table.cart td.actions .input-text, .woocommerce-page table.cart td.actions input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
 }

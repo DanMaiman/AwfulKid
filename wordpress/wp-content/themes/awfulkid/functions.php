@@ -23,4 +23,15 @@ function awk_theme_js () {
 
 add_action( 'wp_enqueue_scripts', 'awk_theme_js' );
 
+function wc_empty_cart_redirect_url() {
+	return 'http://www.awfulkid.com/wordpress/store/';
+}
+add_filter( 'woocommerce_return_to_shop_redirect', 'wc_empty_cart_redirect_url' );
+
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
 ?>

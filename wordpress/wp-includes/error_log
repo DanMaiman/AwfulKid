@@ -1,0 +1,1 @@
+[10-Mar-2017 13:31:46 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/awfulkid/public_html/wp-includes/rss-functions.php on line 8

@@ -9,7 +9,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Awful Kid is an assortment of artists who create with honesty, ambition, and perserverance.">
     <meta name="author" content="Dan Maiman & Ryan Kachikis">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="http://www.awfulkid.com/wp-content/uploads/2016/02/awk_logo.png">
 
     <title>Awful Kid</title>
 
@@ -43,13 +43,13 @@
   <body>
 
 
-      <a href="<?php echo get_settings('home'); ?>"><img class="logo" src="http://www.atebitt.com/wp-content/uploads/2016/01/AWFUKIDL.png"></a>
+      <a href="<?php echo get_settings('home'); ?>"><img class="logo" src="http://www.awfulkid.com/wp-content/uploads/2016/01/AWFUKIDL.png"></a>
 
     <div class="container">
 
 
 <div class="nav-cont">
-  <nav class="nav nav-pills nav-stacked hidden-xs">
+  <nav class="nav nav-main-big animated nav-pills nav-stacked hidden-xs">
     <ul class="nav nav-pills nav-stacked">
       <?php wp_list_pages('title_li=&depth=1'); ?>
     </ul>
@@ -78,8 +78,9 @@
 
 
 <div class="awk_content animated bounceInRight">
+  <div class="arrow_box"><h1 class="callOut"><strong>Click Link <br>to Download!</strong></h1></div>
   <?php
-    $children = wp_list_pages('title_li=&child_of='.$post->ID.'&echo=0');
+    $children = wp_list_pages('title_li=&depth=1&child_of='.$post->ID.'&echo=0');
       if ($children) { ?>
 
 
@@ -90,24 +91,13 @@
 
   <?php
     while(have_posts()) : the_post(); ?>
-
-      <p><?php the_content(''); ?></p>
-
-
+      <p><?php the_content(''); ?></p>  
     <?php endwhile; wp_reset_query(); ?>
+
+    <?php //if (is_page('shop')) {    
+      //woocommerce_content(); } ?>
+    
+
 </div>
 
-   </div><!-- /.container -->
 
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <!-- <script src="dist/js/bootstrap.min.js"></script>-->
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!--<script src="assets/js/ie10-viewport-bug-workaround.js"></script> -->
-  </body>
-</html>
